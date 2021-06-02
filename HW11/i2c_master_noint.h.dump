@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="Native" char_bit="8" short_bit="16" int_bit="32" long_bit="64" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="i2c_master_noint.h"/>
+    <tok fileIndex="0" linenr="1" column="1" str="#"/>
+    <tok fileIndex="0" linenr="1" column="2" str="ifndef"/>
+    <tok fileIndex="0" linenr="1" column="9" str="I2C_MASTER_NOINT_H__"/>
+    <tok fileIndex="0" linenr="2" column="1" str="#"/>
+    <tok fileIndex="0" linenr="2" column="2" str="define"/>
+    <tok fileIndex="0" linenr="2" column="9" str="I2C_MASTER_NOINT_H__"/>
+    <tok fileIndex="0" linenr="3" column="1" str="// Header file for i2c_master_noint.c"/>
+    <tok fileIndex="0" linenr="4" column="1" str="// helps implement use I2C1 as a master without using interrupts"/>
+    <tok fileIndex="0" linenr="6" column="1" str="#"/>
+    <tok fileIndex="0" linenr="6" column="2" str="include"/>
+    <tok fileIndex="0" linenr="6" column="10" str="&lt;xc.h&gt;"/>
+    <tok fileIndex="0" linenr="8" column="1" str="void"/>
+    <tok fileIndex="0" linenr="8" column="6" str="i2c_master_setup"/>
+    <tok fileIndex="0" linenr="8" column="22" str="("/>
+    <tok fileIndex="0" linenr="8" column="23" str="void"/>
+    <tok fileIndex="0" linenr="8" column="27" str=")"/>
+    <tok fileIndex="0" linenr="8" column="28" str=";"/>
+    <tok fileIndex="0" linenr="8" column="30" str="// set up I2C1 as master"/>
+    <tok fileIndex="0" linenr="9" column="1" str="void"/>
+    <tok fileIndex="0" linenr="9" column="6" str="i2c_master_start"/>
+    <tok fileIndex="0" linenr="9" column="22" str="("/>
+    <tok fileIndex="0" linenr="9" column="23" str="void"/>
+    <tok fileIndex="0" linenr="9" column="27" str=")"/>
+    <tok fileIndex="0" linenr="9" column="28" str=";"/>
+    <tok fileIndex="0" linenr="9" column="30" str="// send a START signal"/>
+    <tok fileIndex="0" linenr="10" column="1" str="void"/>
+    <tok fileIndex="0" linenr="10" column="6" str="i2c_master_restart"/>
+    <tok fileIndex="0" linenr="10" column="24" str="("/>
+    <tok fileIndex="0" linenr="10" column="25" str="void"/>
+    <tok fileIndex="0" linenr="10" column="29" str=")"/>
+    <tok fileIndex="0" linenr="10" column="30" str=";"/>
+    <tok fileIndex="0" linenr="10" column="32" str="// send a RESTART signal"/>
+    <tok fileIndex="0" linenr="11" column="1" str="void"/>
+    <tok fileIndex="0" linenr="11" column="6" str="i2c_master_send"/>
+    <tok fileIndex="0" linenr="11" column="21" str="("/>
+    <tok fileIndex="0" linenr="11" column="22" str="unsigned"/>
+    <tok fileIndex="0" linenr="11" column="31" str="char"/>
+    <tok fileIndex="0" linenr="11" column="36" str="byte"/>
+    <tok fileIndex="0" linenr="11" column="40" str=")"/>
+    <tok fileIndex="0" linenr="11" column="41" str=";"/>
+    <tok fileIndex="0" linenr="11" column="43" str="// send a byte (either an address or data)"/>
+    <tok fileIndex="0" linenr="12" column="1" str="unsigned"/>
+    <tok fileIndex="0" linenr="12" column="10" str="char"/>
+    <tok fileIndex="0" linenr="12" column="15" str="i2c_master_recv"/>
+    <tok fileIndex="0" linenr="12" column="30" str="("/>
+    <tok fileIndex="0" linenr="12" column="31" str="void"/>
+    <tok fileIndex="0" linenr="12" column="35" str=")"/>
+    <tok fileIndex="0" linenr="12" column="36" str=";"/>
+    <tok fileIndex="0" linenr="12" column="38" str="// receive a byte of data"/>
+    <tok fileIndex="0" linenr="13" column="1" str="void"/>
+    <tok fileIndex="0" linenr="13" column="6" str="i2c_master_ack"/>
+    <tok fileIndex="0" linenr="13" column="20" str="("/>
+    <tok fileIndex="0" linenr="13" column="21" str="int"/>
+    <tok fileIndex="0" linenr="13" column="25" str="val"/>
+    <tok fileIndex="0" linenr="13" column="28" str=")"/>
+    <tok fileIndex="0" linenr="13" column="29" str=";"/>
+    <tok fileIndex="0" linenr="13" column="31" str="// send an ACK (0) or NACK (1)"/>
+    <tok fileIndex="0" linenr="14" column="1" str="void"/>
+    <tok fileIndex="0" linenr="14" column="6" str="i2c_master_stop"/>
+    <tok fileIndex="0" linenr="14" column="21" str="("/>
+    <tok fileIndex="0" linenr="14" column="22" str="void"/>
+    <tok fileIndex="0" linenr="14" column="26" str=")"/>
+    <tok fileIndex="0" linenr="14" column="27" str=";"/>
+    <tok fileIndex="0" linenr="14" column="29" str="// send a stop"/>
+    <tok fileIndex="0" linenr="15" column="1" str="void"/>
+    <tok fileIndex="0" linenr="15" column="6" str="I2C_read_multiple"/>
+    <tok fileIndex="0" linenr="15" column="23" str="("/>
+    <tok fileIndex="0" linenr="15" column="24" str="unsigned"/>
+    <tok fileIndex="0" linenr="15" column="33" str="char"/>
+    <tok fileIndex="0" linenr="15" column="37" str=","/>
+    <tok fileIndex="0" linenr="15" column="39" str="unsigned"/>
+    <tok fileIndex="0" linenr="15" column="48" str="char"/>
+    <tok fileIndex="0" linenr="15" column="53" str="*"/>
+    <tok fileIndex="0" linenr="15" column="54" str=","/>
+    <tok fileIndex="0" linenr="15" column="56" str="int"/>
+    <tok fileIndex="0" linenr="15" column="59" str=")"/>
+    <tok fileIndex="0" linenr="15" column="60" str=";"/>
+    <tok fileIndex="0" linenr="16" column="1" str="void"/>
+    <tok fileIndex="0" linenr="16" column="6" str="data_combine"/>
+    <tok fileIndex="0" linenr="16" column="18" str="("/>
+    <tok fileIndex="0" linenr="16" column="19" str="unsigned"/>
+    <tok fileIndex="0" linenr="16" column="28" str="char"/>
+    <tok fileIndex="0" linenr="16" column="33" str="*"/>
+    <tok fileIndex="0" linenr="16" column="34" str=","/>
+    <tok fileIndex="0" linenr="16" column="36" str="signed"/>
+    <tok fileIndex="0" linenr="16" column="43" str="short"/>
+    <tok fileIndex="0" linenr="16" column="49" str="*"/>
+    <tok fileIndex="0" linenr="16" column="50" str=","/>
+    <tok fileIndex="0" linenr="16" column="52" str="int"/>
+    <tok fileIndex="0" linenr="16" column="55" str=")"/>
+    <tok fileIndex="0" linenr="16" column="56" str=";"/>
+    <tok fileIndex="0" linenr="18" column="1" str="#"/>
+    <tok fileIndex="0" linenr="18" column="2" str="endif"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="i2c_master_noint.h" linenr="1" str="#ifndef I2C_MASTER_NOINT_H__"/>
+    <directive file="i2c_master_noint.h" linenr="2" str="#define I2C_MASTER_NOINT_H__"/>
+    <directive file="i2c_master_noint.h" linenr="6" str="#include &lt;xc.h&gt;"/>
+    <directive file="i2c_master_noint.h" linenr="18" str="#endif"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0x7fd65e5128b0" file="i2c_master_noint.h" linenr="8" column="1" str="void" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e512980" file="i2c_master_noint.h" linenr="8" column="6" str="i2c_master_setup" scope="0x7fd65e517fe0" type="name" function="0x7fd65e515340" astParent="0x7fd65e512a50"/>
+    <token id="0x7fd65e512a50" file="i2c_master_noint.h" linenr="8" column="22" str="(" scope="0x7fd65e517fe0" link="0x7fd65e512bf0" astOperand1="0x7fd65e512980" valueType-type="void"/>
+    <token id="0x7fd65e512bf0" file="i2c_master_noint.h" linenr="8" column="27" str=")" scope="0x7fd65e517fe0" link="0x7fd65e512a50"/>
+    <token id="0x7fd65e512c40" file="i2c_master_noint.h" linenr="8" column="28" str=";" scope="0x7fd65e517fe0"/>
+    <token id="0x7fd65e5150c0" file="i2c_master_noint.h" linenr="9" column="1" str="void" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e515190" file="i2c_master_noint.h" linenr="9" column="6" str="i2c_master_start" scope="0x7fd65e517fe0" type="name" function="0x7fd65e512b30" astParent="0x7fd65e515260"/>
+    <token id="0x7fd65e515260" file="i2c_master_noint.h" linenr="9" column="22" str="(" scope="0x7fd65e517fe0" link="0x7fd65e515400" astOperand1="0x7fd65e515190" valueType-type="void"/>
+    <token id="0x7fd65e515400" file="i2c_master_noint.h" linenr="9" column="27" str=")" scope="0x7fd65e517fe0" link="0x7fd65e515260"/>
+    <token id="0x7fd65e5154d0" file="i2c_master_noint.h" linenr="9" column="28" str=";" scope="0x7fd65e517fe0"/>
+    <token id="0x7fd65e5155a0" file="i2c_master_noint.h" linenr="10" column="1" str="void" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e515670" file="i2c_master_noint.h" linenr="10" column="6" str="i2c_master_restart" scope="0x7fd65e517fe0" type="name" function="0x7fd65e512540" astParent="0x7fd65e515740"/>
+    <token id="0x7fd65e515740" file="i2c_master_noint.h" linenr="10" column="24" str="(" scope="0x7fd65e517fe0" link="0x7fd65e5158e0" astOperand1="0x7fd65e515670" valueType-type="void"/>
+    <token id="0x7fd65e5158e0" file="i2c_master_noint.h" linenr="10" column="29" str=")" scope="0x7fd65e517fe0" link="0x7fd65e515740"/>
+    <token id="0x7fd65e5159b0" file="i2c_master_noint.h" linenr="10" column="30" str=";" scope="0x7fd65e517fe0"/>
+    <token id="0x7fd65e515a00" file="i2c_master_noint.h" linenr="11" column="1" str="void" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e515a50" file="i2c_master_noint.h" linenr="11" column="6" str="i2c_master_send" scope="0x7fd65e517fe0" type="name" function="0x7fd65e511640" astParent="0x7fd65e515b20"/>
+    <token id="0x7fd65e515b20" file="i2c_master_noint.h" linenr="11" column="21" str="(" scope="0x7fd65e517fe0" link="0x7fd65e511590" astOperand1="0x7fd65e515a50" astOperand2="0x7fd65e515c10" valueType-type="void"/>
+    <token id="0x7fd65e515b70" file="i2c_master_noint.h" linenr="11" column="31" str="char" scope="0x7fd65e517fe0" type="name" isUnsigned="true"/>
+    <token id="0x7fd65e515c10" file="i2c_master_noint.h" linenr="11" column="36" str="byte" scope="0x7fd65e517fe0" type="name" varId="1" variable="0x7fd65e51dac0" astParent="0x7fd65e515b20" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0x7fd65e511590" file="i2c_master_noint.h" linenr="11" column="40" str=")" scope="0x7fd65e517fe0" link="0x7fd65e515b20"/>
+    <token id="0x7fd65e5115e0" file="i2c_master_noint.h" linenr="11" column="41" str=";" scope="0x7fd65e517fe0"/>
+    <token id="0x7fd65e515c60" file="i2c_master_noint.h" linenr="12" column="10" str="char" scope="0x7fd65e517fe0" type="name" isUnsigned="true"/>
+    <token id="0x7fd65e511700" file="i2c_master_noint.h" linenr="12" column="15" str="i2c_master_recv" scope="0x7fd65e517fe0" type="name" function="0x7fd65e518110" astParent="0x7fd65e511750"/>
+    <token id="0x7fd65e511750" file="i2c_master_noint.h" linenr="12" column="30" str="(" scope="0x7fd65e517fe0" link="0x7fd65e5117f0" astOperand1="0x7fd65e511700" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0x7fd65e5117f0" file="i2c_master_noint.h" linenr="12" column="35" str=")" scope="0x7fd65e517fe0" link="0x7fd65e511750"/>
+    <token id="0x7fd65e511840" file="i2c_master_noint.h" linenr="12" column="36" str=";" scope="0x7fd65e517fe0"/>
+    <token id="0x7fd65e511890" file="i2c_master_noint.h" linenr="13" column="1" str="void" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e5118e0" file="i2c_master_noint.h" linenr="13" column="6" str="i2c_master_ack" scope="0x7fd65e517fe0" type="name" function="0x7fd65e5181b0" astParent="0x7fd65e5119b0"/>
+    <token id="0x7fd65e5119b0" file="i2c_master_noint.h" linenr="13" column="20" str="(" scope="0x7fd65e517fe0" link="0x7fd65e511aa0" astOperand1="0x7fd65e5118e0" astOperand2="0x7fd65e511a50" valueType-type="void"/>
+    <token id="0x7fd65e511a00" file="i2c_master_noint.h" linenr="13" column="21" str="int" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e511a50" file="i2c_master_noint.h" linenr="13" column="25" str="val" scope="0x7fd65e517fe0" type="name" varId="2" variable="0x7fd65e51cd40" astParent="0x7fd65e5119b0" valueType-type="int" valueType-sign="signed"/>
+    <token id="0x7fd65e511aa0" file="i2c_master_noint.h" linenr="13" column="28" str=")" scope="0x7fd65e517fe0" link="0x7fd65e5119b0"/>
+    <token id="0x7fd65e511af0" file="i2c_master_noint.h" linenr="13" column="29" str=";" scope="0x7fd65e517fe0"/>
+    <token id="0x7fd65e511b40" file="i2c_master_noint.h" linenr="14" column="1" str="void" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e511b90" file="i2c_master_noint.h" linenr="14" column="6" str="i2c_master_stop" scope="0x7fd65e517fe0" type="name" function="0x7fd65e518250" astParent="0x7fd65e511be0"/>
+    <token id="0x7fd65e511be0" file="i2c_master_noint.h" linenr="14" column="21" str="(" scope="0x7fd65e517fe0" link="0x7fd65e511d00" astOperand1="0x7fd65e511b90" valueType-type="void"/>
+    <token id="0x7fd65e511d00" file="i2c_master_noint.h" linenr="14" column="26" str=")" scope="0x7fd65e517fe0" link="0x7fd65e511be0"/>
+    <token id="0x7fd65e511d50" file="i2c_master_noint.h" linenr="14" column="27" str=";" scope="0x7fd65e517fe0"/>
+    <token id="0x7fd65e511da0" file="i2c_master_noint.h" linenr="15" column="1" str="void" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e511df0" file="i2c_master_noint.h" linenr="15" column="6" str="I2C_read_multiple" scope="0x7fd65e517fe0" type="name" function="0x7fd65e5182f0" astParent="0x7fd65e511e40"/>
+    <token id="0x7fd65e511e40" file="i2c_master_noint.h" linenr="15" column="23" str="(" scope="0x7fd65e517fe0" link="0x7fd65e512190" astOperand1="0x7fd65e511df0" astOperand2="0x7fd65e5120f0" valueType-type="void"/>
+    <token id="0x7fd65e511e90" file="i2c_master_noint.h" linenr="15" column="33" str="char" scope="0x7fd65e517fe0" type="name" isUnsigned="true" astParent="0x7fd65e511fb0"/>
+    <token id="0x7fd65e511fb0" file="i2c_master_noint.h" linenr="15" column="37" str="," scope="0x7fd65e517fe0" astParent="0x7fd65e5120f0" astOperand1="0x7fd65e511e90" astOperand2="0x7fd65e512000"/>
+    <token id="0x7fd65e512000" file="i2c_master_noint.h" linenr="15" column="48" str="char" scope="0x7fd65e517fe0" type="name" isUnsigned="true" astParent="0x7fd65e511fb0"/>
+    <token id="0x7fd65e5120a0" file="i2c_master_noint.h" linenr="15" column="53" str="*" scope="0x7fd65e517fe0" type="op" isArithmeticalOp="True"/>
+    <token id="0x7fd65e5120f0" file="i2c_master_noint.h" linenr="15" column="54" str="," scope="0x7fd65e517fe0" astParent="0x7fd65e511e40" astOperand1="0x7fd65e511fb0" astOperand2="0x7fd65e512140"/>
+    <token id="0x7fd65e512140" file="i2c_master_noint.h" linenr="15" column="56" str="int" scope="0x7fd65e517fe0" type="name" astParent="0x7fd65e5120f0"/>
+    <token id="0x7fd65e512190" file="i2c_master_noint.h" linenr="15" column="59" str=")" scope="0x7fd65e517fe0" link="0x7fd65e511e40"/>
+    <token id="0x7fd65e5121e0" file="i2c_master_noint.h" linenr="15" column="60" str=";" scope="0x7fd65e517fe0"/>
+    <token id="0x7fd65e5122b0" file="i2c_master_noint.h" linenr="16" column="1" str="void" scope="0x7fd65e517fe0" type="name"/>
+    <token id="0x7fd65e512300" file="i2c_master_noint.h" linenr="16" column="6" str="data_combine" scope="0x7fd65e517fe0" type="name" function="0x7fd65e518390" astParent="0x7fd65e512350"/>
+    <token id="0x7fd65e512350" file="i2c_master_noint.h" linenr="16" column="18" str="(" scope="0x7fd65e517fe0" link="0x7fd65e5126f0" astOperand1="0x7fd65e512300" astOperand2="0x7fd65e512650" valueType-type="void"/>
+    <token id="0x7fd65e5123a0" file="i2c_master_noint.h" linenr="16" column="28" str="char" scope="0x7fd65e517fe0" type="name" isUnsigned="true" astParent="0x7fd65e512490"/>
+    <token id="0x7fd65e512440" file="i2c_master_noint.h" linenr="16" column="33" str="*" scope="0x7fd65e517fe0" type="op" isArithmeticalOp="True"/>
+    <token id="0x7fd65e512490" file="i2c_master_noint.h" linenr="16" column="34" str="," scope="0x7fd65e517fe0" astParent="0x7fd65e512650" astOperand1="0x7fd65e5123a0" astOperand2="0x7fd65e5124e0"/>
+    <token id="0x7fd65e5124e0" file="i2c_master_noint.h" linenr="16" column="43" str="short" scope="0x7fd65e517fe0" type="name" isSigned="true" astParent="0x7fd65e512490"/>
+    <token id="0x7fd65e512600" file="i2c_master_noint.h" linenr="16" column="49" str="*" scope="0x7fd65e517fe0" type="op" isArithmeticalOp="True"/>
+    <token id="0x7fd65e512650" file="i2c_master_noint.h" linenr="16" column="50" str="," scope="0x7fd65e517fe0" astParent="0x7fd65e512350" astOperand1="0x7fd65e512490" astOperand2="0x7fd65e5126a0"/>
+    <token id="0x7fd65e5126a0" file="i2c_master_noint.h" linenr="16" column="52" str="int" scope="0x7fd65e517fe0" type="name" astParent="0x7fd65e512650"/>
+    <token id="0x7fd65e5126f0" file="i2c_master_noint.h" linenr="16" column="55" str=")" scope="0x7fd65e517fe0" link="0x7fd65e512350"/>
+    <token id="0x7fd65e512740" file="i2c_master_noint.h" linenr="16" column="56" str=";" scope="0x7fd65e517fe0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0x7fd65e517fe0" type="Global">
+      <functionList>
+        <function id="0x7fd65e515340" tokenDef="0x7fd65e512980" name="i2c_master_setup" type="Function"/>
+        <function id="0x7fd65e512b30" tokenDef="0x7fd65e515190" name="i2c_master_start" type="Function"/>
+        <function id="0x7fd65e512540" tokenDef="0x7fd65e515670" name="i2c_master_restart" type="Function"/>
+        <function id="0x7fd65e511640" tokenDef="0x7fd65e515a50" name="i2c_master_send" type="Function">
+          <arg nr="1" variable="0x7fd65e51dac0"/>
+        </function>
+        <function id="0x7fd65e518110" tokenDef="0x7fd65e511700" name="i2c_master_recv" type="Function"/>
+        <function id="0x7fd65e5181b0" tokenDef="0x7fd65e5118e0" name="i2c_master_ack" type="Function">
+          <arg nr="1" variable="0x7fd65e51cd40"/>
+        </function>
+        <function id="0x7fd65e518250" tokenDef="0x7fd65e511b90" name="i2c_master_stop" type="Function"/>
+        <function id="0x7fd65e5182f0" tokenDef="0x7fd65e511df0" name="I2C_read_multiple" type="Function">
+          <arg nr="1" variable="0x7fd65e518490"/>
+          <arg nr="2" variable="0x7fd65e518560"/>
+          <arg nr="3" variable="0x7fd65e518630"/>
+        </function>
+        <function id="0x7fd65e518390" tokenDef="0x7fd65e512300" name="data_combine" type="Function">
+          <arg nr="1" variable="0x7fd65e518700"/>
+          <arg nr="2" variable="0x7fd65e51bb10"/>
+          <arg nr="3" variable="0x7fd65e51bb80"/>
+        </function>
+      </functionList>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="0x7fd65e518490" nameToken="0x0" typeStartToken="0x7fd65e511e90" typeEndToken="0x7fd65e511e90" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0x7fd65e518560" nameToken="0x0" typeStartToken="0x7fd65e512000" typeEndToken="0x7fd65e5120a0" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="true" isReference="false" isStatic="false"/>
+    <var id="0x7fd65e518630" nameToken="0x0" typeStartToken="0x7fd65e512140" typeEndToken="0x7fd65e512140" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0x7fd65e518700" nameToken="0x0" typeStartToken="0x7fd65e5123a0" typeEndToken="0x7fd65e512440" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="true" isReference="false" isStatic="false"/>
+    <var id="0x7fd65e51bb10" nameToken="0x0" typeStartToken="0x7fd65e5124e0" typeEndToken="0x7fd65e512600" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="true" isReference="false" isStatic="false"/>
+    <var id="0x7fd65e51bb80" nameToken="0x0" typeStartToken="0x7fd65e5126a0" typeEndToken="0x7fd65e5126a0" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0x7fd65e51cd40" nameToken="0x7fd65e511a50" typeStartToken="0x7fd65e511a00" typeEndToken="0x7fd65e511a00" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0x7fd65e51dac0" nameToken="0x7fd65e515c10" typeStartToken="0x7fd65e515b70" typeEndToken="0x7fd65e515b70" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+  </valueflow>
+</dump>
+</dumps>

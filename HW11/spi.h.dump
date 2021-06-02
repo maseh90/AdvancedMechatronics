@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="Native" char_bit="8" short_bit="16" int_bit="32" long_bit="64" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="spi.h"/>
+    <tok fileIndex="0" linenr="1" column="1" str="#"/>
+    <tok fileIndex="0" linenr="1" column="2" str="ifndef"/>
+    <tok fileIndex="0" linenr="1" column="9" str="SPI__H__"/>
+    <tok fileIndex="0" linenr="2" column="1" str="#"/>
+    <tok fileIndex="0" linenr="2" column="2" str="define"/>
+    <tok fileIndex="0" linenr="2" column="9" str="SPI__H__"/>
+    <tok fileIndex="0" linenr="4" column="1" str="void"/>
+    <tok fileIndex="0" linenr="4" column="6" str="initSPI"/>
+    <tok fileIndex="0" linenr="4" column="13" str="("/>
+    <tok fileIndex="0" linenr="4" column="14" str=")"/>
+    <tok fileIndex="0" linenr="4" column="15" str=";"/>
+    <tok fileIndex="0" linenr="5" column="1" str="unsigned"/>
+    <tok fileIndex="0" linenr="5" column="10" str="char"/>
+    <tok fileIndex="0" linenr="5" column="15" str="spi_io"/>
+    <tok fileIndex="0" linenr="5" column="21" str="("/>
+    <tok fileIndex="0" linenr="5" column="22" str="unsigned"/>
+    <tok fileIndex="0" linenr="5" column="31" str="char"/>
+    <tok fileIndex="0" linenr="5" column="36" str="o"/>
+    <tok fileIndex="0" linenr="5" column="37" str=")"/>
+    <tok fileIndex="0" linenr="5" column="38" str=";"/>
+    <tok fileIndex="0" linenr="7" column="1" str="#"/>
+    <tok fileIndex="0" linenr="7" column="2" str="endif"/>
+    <tok fileIndex="0" linenr="7" column="8" str="// SPI__H__"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="spi.h" linenr="1" str="#ifndef SPI__H__"/>
+    <directive file="spi.h" linenr="2" str="#define SPI__H__"/>
+    <directive file="spi.h" linenr="7" str="#endif"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0x7fd65e51df50" file="spi.h" linenr="4" column="1" str="void" scope="0x7fd65e51cf20" type="name"/>
+    <token id="0x7fd65e51dfa0" file="spi.h" linenr="4" column="6" str="initSPI" scope="0x7fd65e51cf20" type="name" function="0x7fd65e516c70" astParent="0x7fd65e514b40"/>
+    <token id="0x7fd65e514b40" file="spi.h" linenr="4" column="13" str="(" scope="0x7fd65e51cf20" link="0x7fd65e514c10" astOperand1="0x7fd65e51dfa0" valueType-type="void"/>
+    <token id="0x7fd65e514c10" file="spi.h" linenr="4" column="14" str=")" scope="0x7fd65e51cf20" link="0x7fd65e514b40"/>
+    <token id="0x7fd65e515670" file="spi.h" linenr="4" column="15" str=";" scope="0x7fd65e51cf20"/>
+    <token id="0x7fd65e51cb30" file="spi.h" linenr="5" column="10" str="char" scope="0x7fd65e51cf20" type="name" isUnsigned="true"/>
+    <token id="0x7fd65e516a40" file="spi.h" linenr="5" column="15" str="spi_io" scope="0x7fd65e51cf20" type="name" function="0x7fd65e51d050" astParent="0x7fd65e516b10"/>
+    <token id="0x7fd65e516b10" file="spi.h" linenr="5" column="21" str="(" scope="0x7fd65e51cf20" link="0x7fd65e516e50" astOperand1="0x7fd65e516a40" astOperand2="0x7fd65e516d80" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0x7fd65e516be0" file="spi.h" linenr="5" column="31" str="char" scope="0x7fd65e51cf20" type="name" isUnsigned="true"/>
+    <token id="0x7fd65e516d80" file="spi.h" linenr="5" column="36" str="o" scope="0x7fd65e51cf20" type="name" varId="1" variable="0x7fd65e51d0f0" astParent="0x7fd65e516b10" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0x7fd65e516e50" file="spi.h" linenr="5" column="37" str=")" scope="0x7fd65e51cf20" link="0x7fd65e516b10"/>
+    <token id="0x7fd65e516f20" file="spi.h" linenr="5" column="38" str=";" scope="0x7fd65e51cf20"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0x7fd65e51cf20" type="Global">
+      <functionList>
+        <function id="0x7fd65e516c70" tokenDef="0x7fd65e51dfa0" name="initSPI" type="Function"/>
+        <function id="0x7fd65e51d050" tokenDef="0x7fd65e516a40" name="spi_io" type="Function">
+          <arg nr="1" variable="0x7fd65e51d0f0"/>
+        </function>
+      </functionList>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="0x7fd65e51d0f0" nameToken="0x7fd65e516d80" typeStartToken="0x7fd65e516be0" typeEndToken="0x7fd65e516be0" access="Argument" scope="0x0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+  </valueflow>
+</dump>
+</dumps>
